@@ -8,7 +8,7 @@ require 'securerandom'
 $current_path = Dir.pwd
 
 if File.symlink?(__FILE__)
-	    dir = File.expand_path(File.dirname(File.readlink(__FILE__)))
+	    dir = File.expand_path(File.dirname(File.realpath(__FILE__)))
 			Dir.chdir dir
 else
 	    dir = File.expand_path(File.dirname(__FILE__))
@@ -25,7 +25,7 @@ class Sender
 							vhost: 		"/",
 							user: 		$config['user'],
 							password: 	$config['password']
-		
+
 		@conn.start
 		@ch 			= @conn.create_channel
 		@x  			= @ch.default_exchange
@@ -77,7 +77,7 @@ class Norminette
 
 	def check files_or_directories, options
 		if options.version
-			version 
+			version
 		else
 			populate_recursive files_or_directories.any? ? files_or_directories : [$current_path]
 			send_files options
