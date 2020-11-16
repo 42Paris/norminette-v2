@@ -28,7 +28,7 @@ bundle # it will ask for your password.
 
 ```bash
 echo 'alias norminette="~/.norminette/norminette.rb"' >> ~/.zshrc
-source ~/.zshrc
+exec zsh
 ```
 <br /><br />
 ### GNU/Linux
@@ -46,7 +46,7 @@ bundle
 
 ```bash
 echo 'alias norminette="~/.norminette/norminette.rb"' >> ~/.zshrc
-source ~/.zshrc
+exec zsh
 ```
 <br /><br />
 ### Windows
