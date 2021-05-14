@@ -1,3 +1,9 @@
+# Important Note
+
+This project is no longer supported by 42. This version of Norminette concerns the V2 version of the 42 Network's most beloved linter. If you are looking to install the current version (V3) of Norminette use this version: https://github.com/42School/norminette
+
+---
+
 <h1 align="center"><code>norminette @ home</code></h1>
 
 <div align="center">
