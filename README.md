@@ -4,6 +4,9 @@
   <sub>Created by <a href="42.fr">42.fr</a></sub>
 </div>
 
+---
+
+# ⚠️ The norminette v2 is now deprecated in favor of the v3: https://github.com/42School/norminette ⚠️
 
 ---
 
